@@ -30,6 +30,6 @@ show_debug_message(tar);
 ```
 Will return:
 ```
-{text:"Hellow World!!!", nest: {test: 123, arr: [9, 1, 2], str: {0: 0, 1: 1}}}
+{text:"Hello World!!!", nest: {test: 123, arr: [9, 1, 2], str: {0: 0, 1: 1}}}
 ```
 Can also optionally set replace to true to overwrite existing keys.
