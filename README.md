@@ -26,7 +26,7 @@ var tar = {
 }
 
 struct_update(src, tar);
-show_debug_messae(tar);
+show_debug_message(tar);
 ```
 Will return:
 ```
