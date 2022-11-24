@@ -5,7 +5,7 @@
 /// @param {Bool} replace Overwrite existing target keys with source keys.
 function struct_update(s, t, r = false)
 {
-	for(var i = 0, a = variable_struct_get_names(s), l = array_length(a); i < l; i++)
+	for(var i = 0, a = variable_struct_get_names(s), l = array_length(a); i < l; ++i)
 	{
 		var
 		k = a[@ i],
@@ -16,7 +16,7 @@ function struct_update(s, t, r = false)
 			if(is_array(v))
 			{
 				var u = array_length(c);
-				for(var o = 0, p = array_length(v); o < p; o++)
+				for(var o = 0, p = array_length(v); o < p; ++o)
 				{
 					if(!r && o < u) continue;
 					c[@ o] = v[@ o];
